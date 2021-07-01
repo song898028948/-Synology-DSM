@@ -15,8 +15,8 @@ function install() {
     # 生成 ffmpeg 脚本
     generate_ffmpeg_wrapper
     # #下载ffmpeg脚本
-    # wget -O - https://raw.githubusercontent.com/song898028948/Synology-DSM/2e635779e13a2ce1ecb4c7db6bfc92f4f966d554/ffmpeg >/var/packages/VideoStation/target/bin/ffmpeg
-    # 6.2.4系统补丁
+    # wget -O - https://github.com/songwqs/Synology-DSM/blob/add8c056ec69b2759483515ea034e1f45e4c46cc/ffmpeg >/var/packages/VideoStation/target/bin/ffmpeg
+    # 去Advanced Media Extensions冲突补丁
     if [ -f "/var/packages/CodecPack/target/bin/ffmpeg33" ]; then
         mv -n /var/packages/CodecPack/target/bin/ffmpeg33 /var/packages/CodecPack/target/bin/ffmpeg33.orig
         cp -n /var/packages/VideoStation/target/bin/ffmpeg /var/packages/CodecPack/target/bin/ffmpeg33
