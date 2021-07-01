@@ -10,7 +10,7 @@ function install() {
     mv -n /var/packages/VideoStation/target/bin/ffmpeg /var/packages/VideoStation/target/bin/ffmpeg.orig
     # 生成 ffmpeg 脚本
     # #下载ffmpeg脚本
-    wget -O - https://raw.githubusercontent.com/songwqs/Synology-DSM/c23960fca32535737661e5cecd4423818e620a8a/ffmpeg >/var/packages/VideoStation/target/bin/ffmpeg
+    wget -O - https://raw.githubusercontent.com/songwqs/Synology-DSM/c23960fca32535737661e5cecd4423818e620a8a/ffmpeg > /var/packages/VideoStation/target/bin/ffmpeg
     # 去Advanced Media Extensions冲突补丁
     if [ -f "/var/packages/CodecPack/target/bin/ffmpeg33" ]; then
         mv -n /var/packages/CodecPack/target/bin/ffmpeg33 /var/packages/CodecPack/target/bin/ffmpeg33.orig
