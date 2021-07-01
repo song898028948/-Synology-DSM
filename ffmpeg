@@ -25,7 +25,7 @@ paramvs=$@
 stream="${@: -1}"
 streamid="FFM$pid"
 bin1=/var/packages/ffmpeg/target/bin/ffmpeg
-bin2=/var/packages/VideoStation/target/bin/ffmpeg-BACKUP
+bin2=/var/packages/VideoStation/target/bin/ffmpeg.orig
 args=()
 
 vcodec="KO"
