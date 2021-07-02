@@ -9,7 +9,8 @@ function install() {
     #备份 VideoStation's ffmpeg
     mv -n /var/packages/VideoStation/target/bin/ffmpeg /var/packages/VideoStation/target/bin/ffmpeg.orig
     # 生成 ffmpeg 脚本
-    # #下载ffmpeg脚本
+    #下载ffmpeg脚本  
+    #wget -O - https://raw.githubusercontent.com/songwqs/Synology-DSM/main/ffmpeg > /var/packages/VideoStation/target/bin/ffmpeg
     wget -O - https://raw.githubusercontent.com/songwqs/Synology-DSM/b2070dfeabfb901e743f48df797d2ee7cee4f50c/ffmpeg > /var/packages/VideoStation/target/bin/ffmpeg
     # 去Advanced Media Extensions冲突补丁
     if [ -f "/var/packages/CodecPack/target/bin/ffmpeg33" ]; then
